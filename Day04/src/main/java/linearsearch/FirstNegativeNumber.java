@@ -1,5 +1,5 @@
 package linearsearch;
-
+import static java.lang.System.*;
 public class FirstNegativeNumber {
     public static int findNegative(int []arr){
         for(int i=0;i<arr.length;i++){
@@ -9,12 +9,12 @@ public class FirstNegativeNumber {
         return -1;
     }
     public static void main(String[] args) {
-        int arr[]={5,2,9,-3,1,4,-1};
+        int []arr={5,2,9,-3,1,4,-1};
         int result=findNegative(arr);
         if(result==-1)
-            System.out.println("There is no negative number in an array");
+            out.println("There is no negative number in an array");
 
         else
-            System.out.println("First negative number found in array at the index of : "+result);
+            out.println("First negative number found in array at the index of : "+result);
     }
 }
