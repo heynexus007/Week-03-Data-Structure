@@ -1,1 +1,4 @@
-Week 03 - DataStructure
+1. maven -> MVN repos
+jUnit 5
+assertion
+
