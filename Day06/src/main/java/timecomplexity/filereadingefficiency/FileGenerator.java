@@ -20,7 +20,7 @@ public class FileGenerator {
 
     public static void main(String[] args) {
         generateFile("1MB.txt", 1);
-        generateFile("100MB.txt", 100);
-        generateFile("500MB.txt", 500);
+        generateFile("30MB.txt", 30);
+        generateFile("50MB.txt", 50);
     }
 }

@@ -32,7 +32,7 @@ public class LargeFileReader {
     }
 
     public static void main(String[] args) {
-        String[] fileSizes = {"1MB.txt", "100MB.txt", "500MB.txt"};
+        String[] fileSizes = {"1MB.txt", "30MB.txt", "50MB.txt"};
 
         //creating array for keeping tracks
         long[] fileReaderTime=new long[3];
@@ -57,11 +57,11 @@ public class LargeFileReader {
         out.printf("----------------------------------------------------------------%n");
         out.printf("| %14s | %16s | %24s |%n","File Size    ","FileReader Time","InputStreamReader Time ");
         out.printf("----------------------------------------------------------------%n");
-        out.printf("| %14s | %16s | %24s |%n","1       ",fileReaderTime[0]+"ms      ",inputStreamReaderTime[0]+"ms          ");
+        out.printf("| %14s | %16s | %24s |%n","1      ",fileReaderTime[0]+"ms      ",inputStreamReaderTime[0]+"ms          ");
         out.printf("----------------------------------------------------------------%n");
-        out.printf("| %14s | %16s | %24s |%n","100      ",fileReaderTime[1]+"ms     ",inputStreamReaderTime[1]+"ms         ");
+        out.printf("| %14s | %16s | %24s |%n","30      ",fileReaderTime[1]+"ms     ",inputStreamReaderTime[1]+"ms         ");
         out.printf("----------------------------------------------------------------%n");
-        out.printf("| %14s | %16s | %24s |%n","500      ",fileReaderTime[2]+"ms     ",inputStreamReaderTime[2]+"ms         ");
+        out.printf("| %14s | %16s | %24s |%n","50      ",fileReaderTime[2]+"ms     ",inputStreamReaderTime[2]+"ms         ");
         out.printf("----------------------------------------------------------------%n");
 
     }
